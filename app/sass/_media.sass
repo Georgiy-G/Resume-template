@@ -1,0 +1,117 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	h2
+		font-size: 24px
+		line-height: 24px
+		span
+			display: block
+	.navigation
+		li
+			a
+				font-size: 20px
+				font-weight: bold
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	/**/
+	.navigation
+		margin-top: 0
+		margin-bottom: 20px
+		li
+			margin-right: 0
+			border-radius: 0
+			display: none
+	.engineer-calculator
+		#wrapper
+			width: 100%
+			padding: 0 10px
+			#tablo
+				font-size: 24px
+		#calculator
+			font-size: 20px
+		#calculator table tbody tr td
+			height: 45px
+		#button-colspan3
+			height: 72px !important
+	.nds-calculator
+		padding: 0 10px
+		.nds-calculator-wrap
+			width: 100%	
+			font-size: 20px
+			.nds-calculator__form
+				li
+					font-size: 18px
+			.nds-calculator__result
+				.result_wrap
+					#nds-calculator__percent1, #nds-calculator__percent2
+						margin-left: 30px
+	.percent-calculator
+		padding: 0 10px
+		.percent-calculator__main
+			width: 100%
+			font-size: 16px
+			.main__block
+				margin-bottom: 35px
+				p
+					input[type=number]
+						width: 54px
+					#percent-calculator__input2
+						padding: 4px
+					button
+						display: block
+						margin-left: 0
+						margin-top: 8px
+						margin-bottom: 5px
+					.mobile-block
+						display: block
+			.main__block:nth-child(3), .main__block:nth-child(4)
+				p
+					.mobile-block
+						display: inline-block
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

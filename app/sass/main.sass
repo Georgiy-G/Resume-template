@@ -1,0 +1,358 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+body
+	background: #deeab8
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+    margin: 0
+input[type=number] 
+    -moz-appearance: textfield
+.navigation
+	text-align: center
+	font-size: 0
+	margin-bottom: 30px
+	margin-top: 10px
+	font-size: 0
+	li		
+		display: inline-block
+		margin-right: 10px
+		border-radius: 5px
+		transition: all 1s easy
+		color: $main-bg
+		position: relative
+		&:last-child
+			margin-right: 0		
+		a
+			color: white
+			text-decoration: none
+			padding: 15px
+			display: inline-block
+			font-size: 19px
+		&:active
+			top: 2px
+			box-shadow: 1px 0px rgba(0, 0, 0, 0.4)
+		&:hover
+			transform: scale(1.05)
+	li:nth-child(1)
+		background: #f70
+		box-shadow: 1px 2px rgba(255, 119, 0, 0.7)
+	li:nth-child(2)
+		background: #D00
+		box-shadow: 1px 2px rgba(221, 0, 0, 0.7)
+	li:nth-child(3)
+		background: #ccc
+		box-shadow: 1px 2px rgba(204, 204, 204, 0.7)
+	li:nth-child(4)
+		background: #0AF
+		box-shadow: 1px 2px rgba(0, 170, 255, 0.7)
+
+	.active
+		background: $main-color
+h2
+	font-size: 30px
+	line-height: 30px
+	text-align: center
+	margin-bottom: 25px
+	span
+		color: #fd0002
+		padding-left: 15px
+		text-shadow: 1px 1px 1px rgba(253,0,2,0.8)
+.simple_calculator
+	text-align: center
+	.simple_calculator-wrap
+		display: inline-block
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.6)
+		border-radius: 5px
+		background: black
+		input
+			width: 300px
+			padding: 10px 9px
+			outline: none
+			border: 1px solid $main-bg
+			color: #dddbda
+			text-align: right
+			background: #303c3f
+			font-size: 30px
+			margin-bottom: -1px
+			box-sizing: border-box
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+		.calc-row
+			margin-bottom: -1px
+			font-size: 0
+			button
+				font-size: 23px
+				outline: none
+				background: #cececf
+				color: black
+				border: 1.5px solid black
+				position: relative
+				box-shadow: 1px 1px rgba(206, 206, 207, 0.4)
+				width: 60px
+				height: 60px
+				box-sizing: border-box
+				margin-right: 0
+				&:last-child
+					margin-right: 0
+				&:active
+					top: 1px
+					box-shadow: 1px 1px rgba(206, 206, 207, 0.7)
+				&:hover
+					background: #eee
+			button:nth-child(4),button:nth-child(5)
+				background: #f70
+				color: white
+				&:hover
+					background: #F90
+			.calculator__equal
+				width: 120px
+		.calc-row:last-child
+			button:first-child
+				border-bottom-left-radius: 5px
+			button:last-child	
+				border-bottom-right-radius: 5px
+.nds-calculator
+	.nds-calculator-wrap
+		border: 1px solid $main-bg
+		border-radius: 5px
+		background: #ccc
+		width: 492px
+		margin: 0 auto
+		font-size: 23px
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.6)
+		.nds-calculator__form
+			font-size: 0
+			margin-bottom: 15px
+			text-align: center
+			li
+				font-size: 23px
+				display: inline-block
+				background: #0AF
+				padding: 5px
+				margin-top: 10px
+				margin-right: 10px
+				border: 1px solid #00b2ca
+				width: 45%
+				border-radius: 5px
+				transition: all 1s easy
+				color: $main-bg
+				position: relative
+				box-shadow: 1px 2px rgba(0, 178, 202, 0.2)
+				&:last-child
+					margin-right: 0
+				a
+					width: 100%
+					display: block
+					color: white
+					text-decoration: none
+				&:active
+					top: 2px
+					box-shadow: 1px 0px rgba(0, 0, 0, 0.4)
+				&:hover
+					transform: scale(1.03)
+
+			.active
+				background: $main-color
+				a
+					color: $main-bg
+		.nds-calculator__result
+			text-align: center
+			margin-bottom: 20px
+			.result_wrap
+				display: inline-block
+				text-align: left
+				margin-bottom: 15px
+				input[type=number]
+					margin-bottom: 10px
+					width: 150px
+					padding: 0 10px
+					text-align: center
+					outline: none
+					border-radius: 5px
+					border: 1px solid $main-bg
+				#nds-calculator__percent1, #nds-calculator__percent2
+					width: 80px
+					margin-left: 24px
+			.result_wrap2
+				#nds-calculator__percent1, #nds-calculator__percent2
+					margin-left: 24px
+			.resultMain-wrap
+				p
+					.result__sum,
+						color: #D00
+				p:first-child
+					font-size: 20px
+					line-height: 1em
+					margin-bottom: 10px
+		.nds-calculator__result2
+			display: none
+.percent-calculator	
+	.percent-calculator__main
+		border: 1px solid $main-bg
+		border-radius: 5px
+		padding: 15px 10px
+		width: 660px
+		margin: 0 auto
+		background: #ccc
+		font-size: 20px
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.6)
+		p
+			input[type=number]
+				width: 60px
+				padding-right: 16px
+				padding-left: 9px
+				text-align: center
+				outline: none
+				border-radius: 5px
+				border: 1px solid $main-bg
+			.placeholder-percent
+				position: relative
+				left: -17px
+				font-weight: bold
+			.button_ok
+				margin-left: 15px
+				outline: none
+				background: #0AF
+				color: $main-color
+				border: none
+				position: relative
+				box-shadow: 1px 1px rgba(0, 0, 0, 0.4)
+				box-sizing: border-box
+				border-radius: 5px
+				&:last-child
+					margin-right: 0
+				&:active
+					top: 1px
+					box-shadow: 1px 0px rgba(0, 170, 255, 0.7)
+		.main__block__inline
+			font-weight: bold
+			margin-bottom: 30px
+.engineer-calculator
+	#wrapper
+		margin: 0 auto
+		width: 492px
+		border-radius: 5px
+		box-shadow: 5px 5px 5px 0 rgba(0,0,0,.6)
+		font-size: 0
+
+	#tabloid
+		display: inline-block
+		width: 100%
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+	#calculator 
+		text-align: center
+		display: inline-block
+		font-size: 24px
+
+	#calculator table 
+		width: 100%
+		background: #000
+	#calculator table tbody tr td
+		width: 145px
+		height: 60px
+		vertical-align: middle
+		border: 1px solid transparent
+
+	#calculator table tbody tr td:active 
+		position: relative
+		top: 1px
+		box-shadow: 1px 1px rgba(0,0,0,.7)
+
+	#tablo
+		width: 100%
+		padding: 10px
+		text-align: right
+		background: #303c3f
+		color: #dddbda
+		border: 1px solid #000
+		display: block
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+		outline: none
+		font-size: 30px
+	#tablo::-webkit-inner-spin-button
+	  	display: none
+	#txt 
+		display: none
+	.inj 
+		border: 1px solid #333333 !important
+		background: #00AAFF
+		color: #FFFFFF
+
+	.inj:hover 
+		background: #00CCFF
+		cursor: pointer
+
+	.number 
+		border: 1px solid #333333 !important
+		background: #CCCCCC
+		color: #333333
+
+	.number:hover 
+		background: #EEEEEE
+		cursor: pointer
+
+	.grey
+		background: #555555
+		color: #FFFFFF
+		border: 1px solid #333333 !important
+
+	.grey sub, .grey sup 
+	    color: #FFFFFF
+
+	.grey:hover
+		background: #777777
+		cursor: pointer
+
+	.orange 
+		background: #FF7700
+		color: #FFFFFF
+		border: 1px solid #333333 !important
+
+	.orange:hover 
+		background: #FF9900
+		cursor: pointer
+
+	.red 
+		border: 1px solid #333333 !important
+		background: #DD0000
+		color: #FFFFFF
+
+	.red:hover 
+		background: #FF0000
+		cursor: pointer
+
+	.nobutton, .nobutton:visited, .nobutton:hover, .nobutton:active 
+		background: #00AA00 !important
+		color: #FFFFFF !important
+		border: 1px solid #333333 !important
+		text-align: center
+		cursor: default !important
+
+	.nobutton label 
+		color: #F3F3F3 !important
+		display: inline
+		padding: 5px
+		border: 1px solid transparent
+
+	.nobutton label input[type=radio] 
+		display: none
+
+	.nobutton label:hover 
+		color: #FFFFFF !important
+		cursor: pointer
+
+	.labelactive 
+		border: 1px solid #004400 !important
+		background: #006600 !important
+
+
+
+
+@import "media"
+

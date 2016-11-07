@@ -1,0 +1,41 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #dddbda
+	opacity: 1
+
+*:-moz-placeholder
+	color: #dddbda
+	opacity: 1
+
+*::-moz-placeholder
+	color: #dddbda
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #dddbda
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+a,p,h1,h2, ul, li
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	margin: 0
